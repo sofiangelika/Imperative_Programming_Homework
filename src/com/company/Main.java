@@ -20,32 +20,33 @@ public class Main {
      System.out.println(price);
 
     //Homework 3.
-    int a = 2;
-    int answer1 = a*a*a;
+    int a = 5;
+    int answer1 = 1;
+    for (int i = 0; i < a; i++) {
+        answer1 *= 3;
+    }
         System.out.println(answer1);
-
     /*
     pseudocode:
-    A = 2
-    ANSWER1 = A * A * A
-    output ANSWER1
+
      */
 
-    int b = 3;
-    int answer2 = (int) Math.pow(b,a);
-
+    int b = 2;
+    int answer2 = 1;
+    for (int i = 0; i < a; i++) {
+        answer2 *= b;
+    }
         System.out.println(answer2);
 
     //Homework 4:
     boolean found = false;
     int n = 0;
-    while (!found){
-    int remainder = (n*n*n + 91) % 47;
-
-    if (remainder == 0)
-        found = true;
-    else
-        n++;
+    while (!found) {
+        int remainder = (n*n*n + 91) % 47;
+        if (remainder == 0)
+            found = true;
+        else
+            n++;
     }
         System.out.println("The smallest positive value of n that is divisible by 47 is: " + n);
 
